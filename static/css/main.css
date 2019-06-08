@@ -26,6 +26,30 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  text-align: left;
+  position: relative;
+  color: #434240;
+  font-weight: 100;
+  z-index: 999;
+}
+
+h1::before {
+  content: "*";
+  position: absolute;
+  left: -1em;
+  top: .06em;
+  font-size: .9em;
+  font-weight: 700;
+}
+
+h1 strong {
+  font-weight: 700;
+  font-style: normal;
+}
+
 nav:before {
   left: 1rem;
 }
@@ -177,6 +201,52 @@ article {
   overflow: hidden;
 }
 
+.item-main {
+  padding-top: 8rem;
+}
+
+.item-main h1 {
+  font-size: 3em;
+}
+
+.item-desc-group {
+  color: #fff;
+  font-size: .8rem;
+  text-align: left;
+  padding: 0;
+  width: 75%;
+  margin: 3em 0 0;
+  line-height: 1.35;
+  position: relative;
+  font-weight: 400;
+  z-index: 999;
+}
+
+.item-desc {
+  color: #9e9d99;
+  font-size: 1.3rem;
+}
+
+.item-btn {
+  color: #9e9d99;
+  display: inline-block;
+  border-radius: 2em;
+  padding: .2em .7em .1em .5em;
+  background: 0 0;
+  font-size: .9rem;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 .4em 0 -.5em;
+  text-decoration: none;
+}
+
+.item-btn:after {
+  content: "‣";
+  display: inline-block;
+  margin: 0 0 0 .4em;
+  transition: all .25s cubic-bezier(.4,0,0,1)
+}
+
 .post .inner-item {
   background: #ece9e9;
   height: 25rem;
@@ -188,8 +258,16 @@ article {
 }
 
 .project .inner-item {
-  background: #1f1f1f;
+  background: #e5e5e5;
   height: 25rem;
+}
+
+.project-img {
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+  right: 0;
+  top: 0;
 }
 
 footer {

@@ -46,22 +46,36 @@
       </article>
       <article class="item photograph">
         <div class="inner-item">
-          
+
         </div>
       </article>
       <article class="item project">
         <div class="inner-item">
-          
+          <div class="item-main auto-width">
+            <h1>
+              <strong>Projects</strong>
+              I have done.
+            </h1>
+            <div class="item-desc-group">
+              <div class="item-desc">
+                Here are some of the projects I have done.
+              </div>
+              <div class="item-btns">
+                <a class="item-btn" target="_blank" href="#">View more</a>
+              </div>
+            </div>
+          </div>
+          <img src="./static/image/project_img.png" class="project-img" />
         </div>
       </article>
     </div>
   </main>
 
   <footer v-bind:title="footer" id="footer">
-      <div class="container">
-          © 2019.
-           |<a href="http://www.fxcdev.com/">博客总访问量：0 次</a>
-        </div>
+    <div class="container">
+      © 2019.
+      |<a href="http://www.fxcdev.com/">博客总访问量：0 次</a>|<a target="_blank" href="http://iconmoon.com/">设计来源</a>
+    </div>
   </footer>
 
   <script type="text/javascript">
@@ -74,6 +88,7 @@
         el => {
           document.getElementsByClassName('header-nav')[0].classList.add('scrolled')
         });
+
   </script>
 
 
