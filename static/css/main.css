@@ -196,4 +196,9 @@ footer {
   display: block;
   text-align: center;
   padding: 3em 0;
+  color: #ccc;
+}
+
+footer a {
+  color: #ccc;
 }
