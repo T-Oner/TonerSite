@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="./static/css/main.css" type="text/css" rel="stylesheet" />
+
+  <script type="text/javascript" src="http://s.anw.red/js/in-view.min.js"></script>
   <title>emrys</title>
 </head>
 
@@ -15,8 +17,8 @@
     <section class="auto-width desc">Based in Xi'an, China.</section>
     <section class="auto-width tag-line">Just Another Coder.</section>
     <section class="auto-width desc">Working at CVTE and previously at TCL.</section>
-    <section class="auto-width tag-line">And know a little about design,</section>
-    <section class="auto-width desc">But just too little to be called full-stack.</section>
+    <section class="auto-width tag-line">And know a little about design.</section>
+    <section class="auto-width desc last-header" v-bind:class="s">But just too little to be called full-stack.</section>
   </header>
   <nav>
     <div class="auto-width header-nav">
@@ -34,6 +36,44 @@
       </ul>
     </div>
   </nav>
+
+  <main>
+    <div class="main">
+      <article class="item post">
+        <div class="inner-item">
+
+        </div>
+      </article>
+      <article class="item photograph">
+        <div class="inner-item">
+          
+        </div>
+      </article>
+      <article class="item project">
+        <div class="inner-item">
+          
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer v-bind:title="footer" id="footer">
+    {{footer}}
+  </footer>
+
+  <script type="text/javascript">
+    inView('.last-header')
+      .on('enter',
+        el => {
+          document.getElementsByClassName('header-nav')[0].classList.remove('scrolled')
+        })
+      .on('exit',
+        el => {
+          document.getElementsByClassName('header-nav')[0].classList.add('scrolled')
+        });
+  </script>
+
+
 
 </body>
 
