@@ -253,8 +253,16 @@ article {
 }
 
 .photograph .inner-item {
-  background: #ffe324;
+  background: #dfe5d5;
   height: 25rem;
+}
+
+.photogrph-img {
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+  right: 10em;
+  top: 0;
 }
 
 .project .inner-item {
