@@ -248,8 +248,16 @@ article {
 }
 
 .post .inner-item {
-  background: #ece9e9;
+  background: #E0E5E4;
   height: 25rem;
+}
+
+.post-img {
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+  right: 0;
+  top: 0;
 }
 
 .photograph .inner-item {
